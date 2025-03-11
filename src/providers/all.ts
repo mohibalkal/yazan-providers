@@ -58,7 +58,6 @@ import { warezcdnembedMp4Scraper } from './embeds/warezcdn/mp4';
 import { astraScraper, novaScraper, orionScraper } from './embeds/whvx';
 import { amznScraper, ntflxScraper } from './embeds/whvxMirrors';
 import { wootlyScraper } from './embeds/wootly';
-import { hindiScraper } from './sources/autoembed';
 import { catflixScraper } from './sources/catflix';
 import { ee3Scraper } from './sources/ee3';
 import { goojaraScraper } from './sources/goojara';
@@ -74,6 +73,8 @@ import { soaperTvScraper } from './sources/soapertv';
 import { vidSrcToScraper } from './sources/vidsrcto';
 import { warezcdnScraper } from './sources/warezcdn';
 import { whvxScraper } from './sources/whvx';
+import { autoembedScraper } from './sources/autoembed2';
+import { uiraliveScraper } from './sources/uiralive';
 
 export function gatherAllSources(): Array<Sourcerer> {
   // all sources are gathered here
@@ -85,7 +86,8 @@ export function gatherAllSources(): Array<Sourcerer> {
     goMoviesScraper,
     zoechipScraper,
     vidsrcScraper,
-    hindiScraper,
+    autoembedScraper,
+    uiraliveScraper,
     ridooMoviesScraper,
     lookmovieScraper,
     nsbxScraper,
