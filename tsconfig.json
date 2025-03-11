@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es2021",
+    "lib": ["es2021", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "esModuleInterop": true,
+    "declaration": true,
+    "outDir": "./lib",
+    "strict": true,
+    "baseUrl": "src",
+    "experimentalDecorators": true,
+    "isolatedModules": false,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": false,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/types"
+    ],
+    "paths": {
+      "@/*": ["./*"],
+      "@entrypoint": ["./index.ts"],
+      "cheerio": ["../node_modules/@types/cheerio/index.d.ts"],
+      "cookie": ["../node_modules/@types/cookie/index.d.ts"],
+      "set-cookie-parser": ["../node_modules/@types/set-cookie-parser/index.d.ts"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "vite.config.ts",
+    "src/providers/sources/**/*"
+  ],
+  "exclude": ["node_modules", "**/__test__", "lib"]
+}
